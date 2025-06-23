@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+          <link rel="shortcut icon" href="/static/images/favicon.png">
+          <title>Zmedios</title>
+        <script src='https://8x8.vc/vpaas-magic-cookie-45d97b5bc5794b1b86a5c1f9b176581b/external_api.js' async></script>
+        <style>
+      html, body, #jaas-container { height: 100%; margin: 0; }
+      .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+      }
+    </style>
+        <script type="text/javascript">
+          window.onload = () => {
+            const api = new JitsiMeetExternalAPI("8x8.vc", {
+              roomName: "vpaas-magic-cookie-45d97b5bc5794b1b86a5c1f9b176581b/SampleAppAstonishingConditionsGuessDowntown",
+              parentNode: document.querySelector('#jaas-container'),
+              configOverwrite: {
+                   brandingRoomAlias: 'anInterestingMeeting'
+              }
+							// Make sure to include a JWT if you intend to record,
+							// make outbound calls or use any other premium features!
+							// jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtNDVkOTdiNWJjNTc5NGIxYjg2YTVjMWY5YjE3NjU4MWIvYmQzMjVlLVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE3NDg0MzAyNDUsImV4cCI6MTc0ODQzNzQ0NSwibmJmIjoxNzQ4NDMwMjQwLCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtNDVkOTdiNWJjNTc5NGIxYjg2YTVjMWY5YjE3NjU4MWIiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOmZhbHNlLCJvdXRib3VuZC1jYWxsIjpmYWxzZSwic2lwLW91dGJvdW5kLWNhbGwiOmZhbHNlLCJ0cmFuc2NyaXB0aW9uIjpmYWxzZSwicmVjb3JkaW5nIjpmYWxzZX0sInVzZXIiOnsiaGlkZGVuLWZyb20tcmVjb3JkZXIiOmZhbHNlLCJtb2RlcmF0b3IiOnRydWUsIm5hbWUiOiJUZXN0IFVzZXIiLCJpZCI6Imdvb2dsZS1vYXV0aDJ8MTAxMjA2MDQzNzMwNDY2MTE1NDQwIiwiYXZhdGFyIjoiIiwiZW1haWwiOiJ0ZXN0LnVzZXJAY29tcGFueS5jb20ifX0sInJvb20iOiIqIn0.hIgLghSb7oWr-hTlapWkR4Iu5Qid_wYczuf7sJ0ADLPP3zaExkOVHuUbM_c90SDD1hGAzs4yaoWSYrNFI8jZnnQ0NuutRy2UL8WPzuSdASSbzmZh2Q8wuyyuhNoFK2PYeP1B1fpH_XblxtivO576PN1XdazDRkQuUGKHXcQxFg5h_sAeImXWBM48SQD5ZZ6iK8If8odio6g0M6vazd4dzPAaftWDFwQekChuCXzB6Otn8-oBlaDA1Cig6WMb0DBZ1nrxYKOzx__on9Jhpcdr7UGC14qvJ_l5-GnQOH5G77rIMc1dv8xwqPJ0h7RdAbOmRS1jWP8SVIJRjHEiPnSJHA"
+            });
+          }
+        </script>
+      </head>
+      <body>
+      <div id="jaas-container"></div></body>
+    </html>
+
+
+
+
+
+
