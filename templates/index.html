@@ -25,7 +25,10 @@
 							// make outbound calls or use any other premium features!
 							// jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtNDVkOTdiNWJjNTc5NGIxYjg2YTVjMWY5YjE3NjU4MWIvYmQzMjVlLVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE3NDg0MzAyNDUsImV4cCI6MTc0ODQzNzQ0NSwibmJmIjoxNzQ4NDMwMjQwLCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtNDVkOTdiNWJjNTc5NGIxYjg2YTVjMWY5YjE3NjU4MWIiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOmZhbHNlLCJvdXRib3VuZC1jYWxsIjpmYWxzZSwic2lwLW91dGJvdW5kLWNhbGwiOmZhbHNlLCJ0cmFuc2NyaXB0aW9uIjpmYWxzZSwicmVjb3JkaW5nIjpmYWxzZX0sInVzZXIiOnsiaGlkZGVuLWZyb20tcmVjb3JkZXIiOmZhbHNlLCJtb2RlcmF0b3IiOnRydWUsIm5hbWUiOiJUZXN0IFVzZXIiLCJpZCI6Imdvb2dsZS1vYXV0aDJ8MTAxMjA2MDQzNzMwNDY2MTE1NDQwIiwiYXZhdGFyIjoiIiwiZW1haWwiOiJ0ZXN0LnVzZXJAY29tcGFueS5jb20ifX0sInJvb20iOiIqIn0.hIgLghSb7oWr-hTlapWkR4Iu5Qid_wYczuf7sJ0ADLPP3zaExkOVHuUbM_c90SDD1hGAzs4yaoWSYrNFI8jZnnQ0NuutRy2UL8WPzuSdASSbzmZh2Q8wuyyuhNoFK2PYeP1B1fpH_XblxtivO576PN1XdazDRkQuUGKHXcQxFg5h_sAeImXWBM48SQD5ZZ6iK8If8odio6g0M6vazd4dzPAaftWDFwQekChuCXzB6Otn8-oBlaDA1Cig6WMb0DBZ1nrxYKOzx__on9Jhpcdr7UGC14qvJ_l5-GnQOH5G77rIMc1dv8xwqPJ0h7RdAbOmRS1jWP8SVIJRjHEiPnSJHA"
             });
-          }
+                    api.addEventListener('readyToClose', () => {
+                        window.location.href = "/";
+                      });
+            };
         </script>
       </head>
       <body>
